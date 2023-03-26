@@ -22,6 +22,9 @@ Alternatively, using strictly docker this command could start it as well:
 
 `docker run -d -v ${pwd}/data:/data -e TYPE=SPIGOT -p 25565:25565 -e EULA=TRUE -e OPS=jroc83 --name mc itzg/minecraft-server`
 
+### List Containers
+`Docker ps -a` will display all running containers.   
+
 ### Logs
 Be sure to keep up with the logs of the container by running this command.
 
