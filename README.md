@@ -31,6 +31,7 @@ Note: The Print Working Directory `{PWD}` command is used to get the current dir
 `EULA` - this shoudl be true or the server will not run.   
 `TYPE` - specifies SPIGOT server.   
 `OPS` - set this to your username. This will give you operator/admin status.   
+`SPIGET_RESOURCES` - comma delimited plugin resource ids for Spigot to download.
 
 ### Plugins
 There are two ways to set up plugins in this Dockerized image of Minecraft.
