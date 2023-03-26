@@ -12,18 +12,6 @@ This is built on the `itzg/minecraft-server` docker image.
 * GitHub Account
 * Some minecraft knowledge
 
-## Visual Studio Code (Optional)
-If you want to tweak and experiment, please download Visual Studio code and install the `Docker` extension.   
-
-## GitHub: SSH Keys (Optional)
-If you want to push and make changes to your own GitHub repo, you will need to setup SSH keys for GitHub.
-
-Generate an ssh key to use in GitHub.
-`$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`   
-
-Reading the public key
-`type ~/.ssh/id_rsa.pub`   
-
 ## Pull Docker Image (Download)
 `docker pull itzg/minecraft-server`
 
@@ -54,3 +42,17 @@ If you need to completely remove the container this command will remove it. Beca
 
 ## Persisted Data
 The data is persisted through a docker volume mount (-v).
+
+***
+
+## Visual Studio Code (Optional)
+If you want to tweak and experiment, please download Visual Studio code and install the `Docker` extension.   
+
+## GitHub: SSH Keys (Optional)
+If you want to push and make changes to your own GitHub repo, you will need to setup SSH keys for GitHub.
+
+Generate an ssh key to use in GitHub.
+`$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`   
+
+Reading the public key
+`type ~/.ssh/id_rsa.pub`   
