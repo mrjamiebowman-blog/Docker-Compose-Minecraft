@@ -35,7 +35,9 @@ Alternatively, using strictly docker this command could start it as well:
 `docker run -d -v ${pwd}/data:/data -e TYPE=SPIGOT -p 25565:25565 -e EULA=TRUE -e OPS=jroc83 --name mc itzg/minecraft-server`
 
 ### Volume Mount (-v)
-The command `-v ${pwd}/data:/data` will mount the current Windows path. The Print Working Directory {PWD} command is used to get the current directory. Alternatively, Linux and iOS would use `-v (PWD)/data:/data`. Similar but not the same.
+The command `-v ${pwd}/data:/data` will mount the container's data folder to the current Windows path. This is used to persist the world data.
+
+Note: The Print Working Directory {PWD} command is used to get the current directory. Alternatively, Linux and iOS would use `-v (PWD)/data:/data`. Similar but not the same.
 
 ### Environment Variables
 `EULA` - this shoudl be true or the server will not run.   
