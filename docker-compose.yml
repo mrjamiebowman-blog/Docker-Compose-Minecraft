@@ -11,3 +11,4 @@ services:
       EULA: TRUE
       TYPE: SPIGOT
       OPS: jroc83
+      SPIGET_RESOURCES: 372395

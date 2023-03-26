@@ -32,6 +32,15 @@ Note: The Print Working Directory `{PWD}` command is used to get the current dir
 `TYPE` - specifies SPIGOT server.   
 `OPS` - set this to your username. This will give you operator/admin status.   
 
+### Plugins
+There are two ways to set up plugins in this Dockerized image of Minecraft.
+
+[Spigot: SuperVanish](https://www.spigotmc.org/threads/supervanish.372395/)   
+
+#1 - Default - use a Spigot Resource ID as an environment variable (-e SPIGET_RESOURCES=372395).
+
+#2 - copy in the `SuperVanish.jar` file into the volume mounted path `data/plugins/` ... This will require restarting the container for it to pick up the plugin after it has been copied.   
+
 ## Stop
 `stop.ps1` - this scripts stops the docker compose but does not remove the container.
 
