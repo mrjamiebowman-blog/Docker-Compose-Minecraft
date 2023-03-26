@@ -1,5 +1,5 @@
 # Docker Compose: Minecraft (Windows)
-This is a docker compose tutorial / intro to docker is for setting up a spigot Minecraft server running on a Windows host machine.
+This is a docker compose / intro to docker tutorial for setting up a Minecraft spigot server.   
 
 This is built on the `itzg/minecraft-server` docker image.
 
