@@ -6,11 +6,14 @@ This is built on the `itzg/minecraft-server` docker image.
 [GitHub: Docker Minecraft Server](https://github.com/itzg/docker-minecraft-server/blob/master/README.md)   
 
 ## Requirements
-* Docker Desktop
+* Docker Desktop / Docker Compose
 * Visual Studio Code
 * PowerShell
 * GitHub Account
 * Some minecraft knowledge
+
+## Visual Studio Code (Optional)
+If you want to tweak and experiment, please download Visual Studio code and install the `Docker` extension.   
 
 ## GitHub: SSH Keys (Optional)
 If you want to push and make changes to your own GitHub repo, you will need to setup SSH keys for GitHub.
