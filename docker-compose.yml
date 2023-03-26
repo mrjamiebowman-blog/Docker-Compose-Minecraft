@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  postgres:
+    build:
+      context: ./minecraft
+    container_name: minecraft-custom
+    ports:
+      - 25565:25565
+    volumes:
+      - ./data/:/data
+    environment:
+      EULA: TRUE
+      OPS: jroc83
