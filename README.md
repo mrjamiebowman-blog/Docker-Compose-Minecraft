@@ -1,5 +1,5 @@
 # Docker Compose: Minecraft (Windows)
-This is a docker compose tutorial / intro to docker is for setting up a spigot Minecraft server. This will also install the SuperVanish plugin in one of two ways. You can either copy in the file your self and drop it in the plugins folder through a volume mount (-v) or through an environmental variable.
+This is a docker compose tutorial / intro to docker is for setting up a spigot Minecraft server running on a Windows host machine.
 
 This is built on the `itzg/minecraft-server` docker image.
 
@@ -27,10 +27,17 @@ Reading the public key
 ## Start
 `start.ps1` - will run the docker compose command `docker-compose up -d`, this will start the container in a detatched state.
 
-Alternatively, using strictly docker this command could start it as well.
+Alternatively, using strictly docker this command could start it as well:   
+
 `docker run -d -v ${pwd}/data:/data -e TYPE=SPIGOT -p 25565:25565 -e EULA=TRUE -e OPS=jroc83 --name mc itzg/minecraft-server`
 
+### Volume Mount (-v)
+The command `-v ${pwd}/data:/data` will mount the current Windows path. The Print Working Directory {PWD} command is used to get the current directory. Alternatively, Linux and iOS would use `-v (PWD)/data:/data`. Similar but not the same.
+
 ### Environment Variables
+`EULA` - this shoudl be true or the server will not run.   
+`TYPE` - specifies SPIGOT server.   
+`OPS` - set this to your username. This will give you operator/admin status.   
 
 ## Stop
 `stop.ps1` - this scripts stops the docker compose but does not remove the container.
