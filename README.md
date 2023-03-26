@@ -16,11 +16,16 @@ This is built on the `itzg/minecraft-server` docker image.
 `docker pull itzg/minecraft-server`
 
 ## Start
-`start.ps1` - will run the docker compose command `docker-compose up -d`, this will start the container in a detatched state.
+`start.ps1` - will run the docker compose command `docker-compose up -d`, this will start the container in a detatched state with the name of `minecraft`.
 
 Alternatively, using strictly docker this command could start it as well:   
 
 `docker run -d -v ${pwd}/data:/data -e TYPE=SPIGOT -p 25565:25565 -e EULA=TRUE -e OPS=jroc83 --name mc itzg/minecraft-server`
+
+### Logs
+Be sure to keep up with the logs of the container by running this command.
+
+`docker logs minecraft` or if you want to follow the logs (stream) run `docker logs -f minecraft`
 
 ### Volume Mount (-v)
 The command `-v ${pwd}/data:/data` will mount the container's data folder to the current Windows path. This is used to persist the world data.
