@@ -44,9 +44,9 @@ Note: The Print Working Directory `{PWD}` command is used to get the current dir
 ### Plugins
 There are two ways to set up plugins in this Dockerized image of Minecraft.
 
-[Spigot: SuperVanish](https://www.spigotmc.org/threads/supervanish.372395/)   
+[Spigot: SuperVanish](https://www.spigotmc.org/resources/supervanish-be-invisible.1331/update?update=79065)   
 
-#1 - Default - use a Spigot Resource ID as an environment variable (-e SPIGET_RESOURCES=372395).
+#1 - Default - use a Spigot Resource ID as an environment variable (-e SPIGET_RESOURCES=1331).
 
 #2 - copy in the `SuperVanish.jar` file into the volume mounted path `data/plugins/` ... This will require restarting the container for it to pick up the plugin after it has been copied.   
 
