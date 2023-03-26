@@ -1,2 +1,2 @@
 clear
-docker-compose -f .\docker-compose-custom.yml start
+docker-compose -f .\docker-compose-custom.yml up -d

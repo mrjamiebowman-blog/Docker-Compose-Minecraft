@@ -1,8 +1,7 @@
 version: "3.9"
 services:
-  postgres:
-    build:
-      context: ./minecraft
+  minecraft:
+    image: itzg/minecraft-server:latest
     container_name: minecraft-custom
     ports:
       - 25565:25565
@@ -10,4 +9,5 @@ services:
       - ./data/:/data
     environment:
       EULA: TRUE
+      TYPE: SPIGOT
       OPS: jroc83

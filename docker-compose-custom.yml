@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  postgres:
+  minecraft:
     build:
       context: ./minecraft
     container_name: minecraft-custom
@@ -10,4 +10,5 @@ services:
       - ./data/:/data
     environment:
       EULA: TRUE
+      TYPE: SPIGOT
       OPS: jroc83
