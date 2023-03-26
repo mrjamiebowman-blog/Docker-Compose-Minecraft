@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   minecraft:
+    image: mrjamiebowman/minecraft-custom
     build:
       context: ./minecraft
     container_name: minecraft-custom
